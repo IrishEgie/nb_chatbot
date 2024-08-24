@@ -1,0 +1,126 @@
+#QWorking nlp + naïve bayes model
+
+import re
+import joblib
+import numpy as np
+import pandas as pd
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import MultinomialNB
+from nltk.corpus import wordnet
+from nltk.corpus import wordnet
+from nltk.stem import WordNetLemmatizer
+import nltk
+
+# Download required NLTK data
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+#An NLTK interface for WordNet. WordNet is a lexical database of English. Using synsets, helps find conceptual relationships between words such as hypernyms, hyponyms, synonyms, antonyms etc.
+
+# Initialize lemmatizer
+lemmatizer = WordNetLemmatizer()
+
+from nltk.stem import WordNetLemmatizer
+import json
+
+
+# Load the trained model
+model_file_path = '/content/drive/MyDrive/Dev/Chatbot/naive_bayes_model.pkl'
+model = joblib.load(model_file_path)
+
+# Loading the dataset
+data_path = '/content/drive/MyDrive/Dev/Chatbot/dataTraining.json'
+with open(data_path, 'r') as file:
+    data = json.load(file)
+
+df = pd.DataFrame(data)
+X = df.drop('prognosis', axis=1)
+y = df['prognosis']
+
+# Initialize the TF-IDF Vectorizer and transform the dataset
+symptom_list = X.columns.tolist()
+tfidf_vectorizer = TfidfVectorizer(vocabulary=symptom_list, tokenizer=lambda x: x.split(','))
+X_tfidf = tfidf_vectorizer.fit_transform(X.apply(lambda row: ','.join([symptom for symptom, present in zip(symptom_list, row) if present == 1]), axis=1))
+
+# Initialize lemmatizer
+lemmatizer = WordNetLemmatizer()
+
+def get_wordnet_pos(word):
+    """Map POS tag to first character lemmatize() accepts."""
+    tag = wordnet.synsets(word)
+    return tag[0].pos() if tag else wordnet.NOUN
+
+def prognosis(model, symptoms, symptom_list):
+    """
+    Predict the prognosis based on the provided symptoms.
+    """
+    # Ensure the symptoms are in the same order as the symptom_list
+    input_symptoms = np.zeros(len(symptom_list))
+    for symptom in symptoms:
+        if symptom in symptom_list:
+            index = symptom_list.index(symptom)
+            input_symptoms[index] = 1
+
+    # Transform the symptoms into the TF-IDF representation
+    input_symptoms_str = ','.join(symptoms)
+    input_symptoms_tfidf = tfidf_vectorizer.transform([input_symptoms_str])
+
+    # Predict the prognosis based on the input symptoms
+    prediction = model.predict(input_symptoms_tfidf)
+    return prediction[0]
+
+def extract_symptoms_from_text(text, symptom_list):
+    """
+    Extract symptoms from the user input text using lemmatization and word similarity.
+    """
+    symptoms_found = []
+    words = text.lower().split()
+
+    for word in words:
+        lemma = lemmatizer.lemmatize(word, get_wordnet_pos(word))
+        for symptom in symptom_list:
+            if re.search(r'\b' + re.escape(symptom.lower()) + r'\b', lemma):
+                symptoms_found.append(symptom)
+            # Additional check for similarity
+            elif symptom.lower().startswith(lemma) or lemma.startswith(symptom.lower()):
+                symptoms_found.append(symptom)
+
+    return symptoms_found
+
+def chatbot():
+    """
+    Interactive chatbot for diagnosing diseases based on user symptoms.
+    """
+    print("Hello! Welcome to your personal health assistant. I'm here to help you identify potential health concerns based on your symptoms.")
+    print("Please write down a list of at least 3 symptoms in your chat for me to provide a prognosis.\nTo exit simply type 'done' or 'q' to finish)")
+
+    n_sym_count = 0  # Count of times user input is invalid
+    while True:
+        user_input = input("You: ").strip()
+
+        if user_input.lower() in ["quit", "exit", "done", "q"]:
+            print("Thank you for chatting with me. Take care and stay healthy!")
+            break
+
+        # Extract symptoms from user input
+        symptoms = extract_symptoms_from_text(user_input, symptom_list)
+
+        # Check how many symptoms were input by the user
+        sym_in_count = len(symptoms)
+
+        # Ensure the user inputs at least 3 symptoms
+        if sym_in_count < 3:
+            print("Sorry, due to the lack of symptom input, I cannot give an accurate prediction of what disease you might have.\nPlease input a list of symptoms in one chat, identifying at least 3 symptoms for me to provide a prognosis.")
+            continue  # Prompt the user to try again
+
+        # If no symptoms were extracted
+        if not symptoms:
+            n_sym_count += 1
+            print("I didn't catch any symptoms in that. Could you describe your symptoms again? For a more accurate prognosis, list at least 4 symptoms.")
+            if n_sym_count >= 3:
+                print("Here's a list of symptoms I can recognize:")
+                print(", ".join(symptom_list))
+        else:
+            print(f"Okay, based on your symptoms, my knowledge of the nearest symptoms match are: {', '.join(symptoms)}")
+            predicted_disease = prognosis(model, symptoms, symptom_list)
+            print(f"I think you might have: {predicted_disease}.\Please Consult your nearest doctor for verification.\nThank you for your input! (Type 'done' or 'q' to finish)")

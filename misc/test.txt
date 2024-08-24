@@ -1,0 +1,62 @@
+=======================
+typhus
+diarrhea
+abdominal pain
+nausea
+headache
+-----------------------
+typhoid
+=======================
+vomiting
+loss_of_appetite
+passage_of_gases
+internal_itching
+-----------------------
+Peptic ulcer diseae
+=======================
+itching
+skin_rash
+spotting_ urination
+burning_micturition
+stomach_pain
+-----------------------
+Drug Reaction
+=======================
+
+fatigue
+high_fever
+cough
+breathlessness
+-----------------------
+Bronchial Asthma
+=======================
+chills
+joint_pain
+headache
+high_fever
+pain_behind_the_eyes
+back_pain
+fatigue
+red_spots
+-----------------------
+Dengue
+=======================
+
+
+
+NLP 
+-----------------------
+#Bronchial Asthma
+hey chat, I am experiencing fatigue, high fever & cough. Sometimes i'm also feeling breathless
+-----------------------
+#Peptic ulcer diseae
+i am vomiting, & have loss of  appetite, as well I have passage of gases, Im also internal itching
+-----------------------
+# Drug Reaction
+ i am currently having skin rash, itching, & spotting urination, i also have stomach pain
+-----------------------
+hey chat, I'm currently having chills, my joints hurts, I have a headache, as well as a high fever, I also have a few red spots around my body, and Im fatigued overall as well
+-----------------------
+Dengue
+=======================
+

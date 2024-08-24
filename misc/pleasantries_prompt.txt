@@ -1,0 +1,4 @@
+Now that this is working. Say i also want it to respon to pleasantries do i still need to create a model for it with a json dataset? I need the program to; 
+1. Determine if the user input has pleasantries on it. If so respond with pleasantries first. Then divert the question what they're feeling currently
+2. Determine if the user input has symptoms on it. If so respond with pleasantries first. Then ask the question what symptoms they have. Then respond normal program like the given code.
+3. If it has both then respond with pleasantries first. Then respond based on the nearest matching symptom from the naive base model & return a prognosis to the user. End with pleasantries 
