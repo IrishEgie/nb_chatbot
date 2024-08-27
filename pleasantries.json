@@ -47,7 +47,6 @@
         "Many thanks!"
       ],
       "responses": [
-<<<<<<< HEAD
         "You're welcome!",
         "Glad I could help!",
         "Anytime!",
@@ -65,8 +64,6 @@
       "tag": "prompt",
       "patterns": ["Tell me something"],
       "responses": [
-=======
->>>>>>> 402d468bfce1bfcf46c614f52fb68fef91f6fd08
         "Did you hear about the claustrophobic astronaut? He just needed a little space.",
         "Here's something interesting - did you know a group of unicorns is called a blessing?",
         "Alright, here's a good one - what do you call a fake noodle? An Impasta!"
