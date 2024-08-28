@@ -1,4 +1,11 @@
 =======================
+"itching": 1,
+"skin_rash": 1,
+"nodal_skin_eruptions": 1,
+"dyschromic_patches": 1,
+-----------------------
+Fungal infection
+=======================
 typhus
 diarrhea
 abdominal pain
@@ -41,8 +48,31 @@ red_spots
 -----------------------
 Dengue
 =======================
-
-
+nausea
+yellowish_skin
+vomiting
+joint_pain
+muscle_pain
+yellowing_of_eyes
+mild_fever
+diarrhea
+loss_of_appetite
+-----------------------
+hepatitis A
+=======================
+receiving_unsterile_injections
+receiving_blood_transfusion
+malaise
+yellowing_of_eyes
+yellow_urine
+loss_of_appetite
+nausea
+dark_urine
+yellowish_skin
+lethargy
+-----------------------
+hepatitis B
+=======================
 
 NLP 
 -----------------------

@@ -1,0 +1,155 @@
+Here are 50 interactive questions based on the dataset, ensuring that no more than two questions relate to the same prognosis. Each question is designed to test the chatbot's ability to recognize symptoms and provide accurate prognoses.
+
+1. **Question**: "I'm feeling really itchy, and I've noticed a rash along with some nodules on my skin. Could this be something serious?"
+   - **Prognosis**: Fungal infection
+
+2. **Question**: "I can't stop sneezing, and I feel chills running through me. My eyes are constantly watering. What could be wrong?"
+   - **Prognosis**: Allergy
+
+3. **Question**: "I've been having terrible stomach pain, and I noticed some ulcers on my tongue. I'm also vomiting and coughing a lot. What might be causing this?"
+   - **Prognosis**: GERD
+
+4. **Question**: "I've been throwing up a lot and have noticed my skin turning yellow. I've also lost my appetite and have pain in my abdomen. Could this be something severe?"
+   - **Prognosis**: Chronic cholestasis
+
+5. **Question**: "I have this intense itching and a rash on my skin. It also hurts when I urinate, and I've noticed some spotting. What could this indicate?"
+   - **Prognosis**: Drug Reaction
+
+6. **Question**: "I’ve been feeling nauseous and have lost my appetite. I also feel a lot of pain in my abdomen and noticed some gas passing frequently. What might I have?"
+   - **Prognosis**: Peptic ulcer disease
+
+7. **Question**: "I've been losing weight rapidly, and I feel tired all the time. I also noticed that I get blurry vision and feel really hungry most of the time. What could be causing this?"
+   - **Prognosis**: Diabetes
+
+8. **Question**: "I feel really tired, and I can't seem to focus. I also have been gaining weight rapidly. Could this be related to any condition?"
+   - **Prognosis**: Hypothyroidism
+
+9. **Question**: "I’m experiencing a lot of fatigue, mood swings, and I can't seem to stay calm. I’ve also been sweating a lot and have diarrhea. What might I have?"
+   - **Prognosis**: Hyperthyroidism
+
+10. **Question**: "I've been vomiting a lot and feeling extremely tired. I've also noticed that my skin is turning yellow, and I have dark urine. Could this be something serious?"
+    - **Prognosis**: Hepatitis D
+
+11. **Question**: "I've been having chills, vomiting, and a really high fever. My head hurts, and I feel nauseous. Could this be malaria?"
+    - **Prognosis**: Malaria
+
+12. **Question**: "I've noticed a rash on my skin, and I feel really tired. I’ve also been having a mild fever and headache. Could this be chicken pox?"
+    - **Prognosis**: Chicken pox
+
+13. **Question**: "I’ve been having joint pain and chills. I’ve also been vomiting and have a high fever. My appetite is gone, and I feel nauseous. What could be wrong?"
+    - **Prognosis**: Dengue
+
+14. **Question**: "I’m feeling dizzy and have lost my balance a few times. I also have a stiff neck and some back pain. What could be causing this?"
+    - **Prognosis**: Cervical spondylosis
+
+15. **Question**: "I’ve been feeling a lot of pain in my joints, especially in my knees and hips. I also have neck pain and swelling in my joints. Could this be arthritis?"
+    - **Prognosis**: Osteoarthritis
+
+16. **Question**: "I’ve been vomiting and have a really bad headache. I feel like the room is spinning, and I've lost my balance a few times. Could this be vertigo?"
+    - **Prognosis**: (vertigo) Paroymsal Positional Vertigo
+
+17. **Question**: "I’ve been having joint pain, and my skin has been peeling. I also noticed some silver-like dusting on my skin. What might I have?"
+    - **Prognosis**: Psoriasis
+
+18. **Question**: "I’ve been having a lot of difficulty urinating, and it burns when I do. I also noticed a foul smell in my urine. Could this be an infection?"
+    - **Prognosis**: Urinary tract infection
+
+19. **Question**: "I’ve been coughing a lot and feeling really tired. I also have a high fever and noticed some phlegm when I cough. Could this be something serious?"
+    - **Prognosis**: Tuberculosis
+
+20. **Question**: "I’ve been sneezing a lot, and I feel really chilly. I also have a sore throat and noticed some congestion in my chest. Could this be a cold?"
+    - **Prognosis**: Common Cold
+
+21. **Question**: "I’ve been feeling really tired and noticed that my heart is racing. I also have pain in my chest and a high fever. Could this be pneumonia?"
+    - **Prognosis**: Pneumonia
+
+22. **Question**: "I’ve been constipated and noticed some blood in my stool. It also hurts when I go to the bathroom, and I feel irritation in my anus. What might be the issue?"
+    - **Prognosis**: Dimorphic hemorrhoids (piles)
+
+23. **Question**: "I’ve been vomiting a lot and noticed that my skin is turning yellow. I also have pain in my abdomen and a history of alcohol consumption. Could this be related?"
+    - **Prognosis**: Alcoholic hepatitis
+
+24. **Question**: "I’ve been having a lot of headaches and chest pain. I also feel dizzy and noticed that I lose my balance sometimes. Could this be hypertension?"
+    - **Prognosis**: Hypertension
+
+25. **Question**: "I’ve been feeling really anxious and have been sweating a lot. I also have blurred vision and noticed that I’m hungrier than usual. Could this be hypoglycemia?"
+    - **Prognosis**: Hypoglycemia
+
+26. **Question**: "I’ve been feeling tired all the time, and I’ve noticed a lot of weight gain. I also feel cold, and my hands and feet are often cold too. Could this be hypothyroidism?"
+    - **Prognosis**: Hypothyroidism
+
+27. **Question**: "I’ve been having a lot of chest pain and sweating. I also feel breathless and have vomited a few times. Could this be related to my heart?"
+    - **Prognosis**: Heart attack
+
+28. **Question**: "I’ve been feeling really itchy, and I noticed some red spots over my body. I also have a high fever and headache. Could this be dengue?"
+    - **Prognosis**: Dengue
+
+29. **Question**: "I’ve been having a lot of stomach pain and noticed that my stool is bloody. It also hurts a lot when I go to the bathroom. Could this be related to hemorrhoids?"
+    - **Prognosis**: Dimorphic hemorrhoids (piles)
+
+30. **Question**: "I’ve been vomiting a lot, and I noticed that my eyes have turned yellow. My abdomen hurts, and I feel really tired. Could this be hepatitis?"
+    - **Prognosis**: Hepatitis B
+
+31. **Question**: "I’ve been feeling really itchy and noticed some dyschromic patches on my skin. My skin also has some nodal eruptions. What might I have?"
+    - **Prognosis**: Fungal infection
+
+32. **Question**: "I’ve been feeling extremely tired and have noticed some weight loss. I also feel restless and have irregular sugar levels. Could this be diabetes?"
+    - **Prognosis**: Diabetes
+
+33. **Question**: "I’ve been vomiting and have a really bad headache. I feel like I’m losing balance, and my speech is slurred. Could this be related to hypoglycemia?"
+    - **Prognosis**: Hypoglycemia
+
+34. **Question**: "I’ve been having a lot of pain in my chest and sweating profusely. I also feel really weak in my limbs and have a fast heart rate. Could this be pneumonia?"
+    - **Prognosis**: Pneumonia
+
+35. **Question**: "I’ve been feeling really nauseous and have lost my appetite. My skin is turning yellow, and I’ve noticed some abdominal pain. Could this be jaundice?"
+    - **Prognosis**: Jaundice
+
+36. **Question**: "I’ve been having a lot of pain in my neck and back. I also feel dizzy and have lost my balance a few times. Could this be cervical spondylosis?"
+    - **Prognosis**: Cervical spondylosis
+
+37. **Question**: "I’ve been feeling really tired and noticed some muscle wasting. I also have a high fever and patches in my throat. Could this be something serious?"
+    - **Prognosis**: AIDS
+
+38. **Question**: "I’ve been vomiting a lot, and I noticed that my eyes are yellowing. I’ve also lost my appetite and feel pain in my abdomen. Could this be hepatitis?"
+    - **Prognosis**: Hepatitis C
+
+39. **Question**: "I’ve been feeling really weak and noticed that one side of my body feels numb. I also have a headache and feel
+
+ like I’m losing consciousness. Could this be paralysis?"
+    - **Prognosis**: Paralysis (brain hemorrhage)
+
+40. **Question**: "I’ve been feeling really tired and noticed some joint pain. My skin has also started peeling, and I see some silver-like dusting. Could this be psoriasis?"
+    - **Prognosis**: Psoriasis
+
+41. **Question**: "I’ve been feeling extremely nauseous and vomiting. I also have a high fever and some red spots over my body. Could this be typhoid?"
+    - **Prognosis**: Typhoid
+
+42. **Question**: "I’ve been feeling extremely tired and noticed some scarring on my skin. I also have blackheads and pus-filled pimples. Could this be acne?"
+    - **Prognosis**: Acne
+
+43. **Question**: "I’ve been feeling really tired and noticed some bruising. My legs are swollen, and I have visible veins on my calf. Could this be varicose veins?"
+    - **Prognosis**: Varicose veins
+
+44. **Question**: "I’ve been vomiting a lot and noticed that my abdomen is swelling. I’ve also been feeling really tired. Could this be alcoholic hepatitis?"
+    - **Prognosis**: Alcoholic hepatitis
+
+45. **Question**: "I’ve been vomiting a lot, and I noticed some yellow crust around my nose. I also have a high fever and blistering on my skin. Could this be impetigo?"
+    - **Prognosis**: Impetigo
+
+46. **Question**: "I’ve been feeling really dizzy and noticed some spinning movements. I also have a headache and feel nauseous. Could this be vertigo?"
+    - **Prognosis**: (vertigo) Paroymsal Positional Vertigo
+
+47. **Question**: "I’ve been having a lot of headaches and feeling nauseous. I also have pain behind my eyes and a high fever. Could this be related to malaria?"
+    - **Prognosis**: Malaria
+
+48. **Question**: "I’ve been having a lot of fatigue and joint pain. I also noticed some silver-like dusting on my skin. Could this be psoriasis?"
+    - **Prognosis**: Psoriasis
+
+49. **Question**: "I’ve been having a lot of abdominal pain and diarrhea. I also have a high fever and noticed some blood in my stool. Could this be related to typhoid?"
+    - **Prognosis**: Typhoid
+
+50. **Question**: "I’ve been feeling extremely weak and noticed that my urine is dark. I also have a high fever and abdominal pain. Could this be hepatitis E?"
+    - **Prognosis**: Hepatitis E
+
+These questions are structured to help test the chatbot's symptom recognition and prognosis prediction capabilities.
