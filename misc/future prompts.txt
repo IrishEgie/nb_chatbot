@@ -1,3 +1,0 @@
-hey chat the code works wonderfully now, I want you to save the model as a pickle file (pkl) for later use. Use the Joblib module
-
-hey chat the code is working well but say that I want to add some pleasantries to the bot when starting a conversation between the user & the chatbot. This is to say that the medical knowledge of the model has to remain & that the chatbot has to ask the user what he/she is feeling.
