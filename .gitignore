@@ -1,15 +1,5 @@
 PREDICTWELL-Compilation-Chap-1-3.pdf
 Chatbot_Test_Cases.xlsx
 ~$Chatbot_Test_Cases.xlsx
-\Chatbot Naive Bayes\testset
-testset/database.json
-testset/Disease-Prediction-Dataset.xlsx
-testset/dp_dataset_min.csv
-testset/dp_dataset.csv
-testset/train_data_chatbot_min_dup.csv
-testset/train_data_chatbot.csv
-testset/train_data_chatbot_min.csv
-testset/train_data_min.json
-chatbot_4_copy_for_records.ipynb
-chatbot_4.ipynb
-working_1.txt
+test_cases_maker.py
+test_cases.txt
