@@ -10,3 +10,6 @@ testset/train_data_chatbot_min_dup.csv
 testset/train_data_chatbot.csv
 testset/train_data_chatbot_min.csv
 testset/train_data_min.json
+chatbot_4_copy_for_records.ipynb
+chatbot_4.ipynb
+working_1.txt
